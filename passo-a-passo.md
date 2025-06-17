@@ -117,7 +117,7 @@
     arduino.serial.baudrate=9600 # Deve ser a mesma que no código do Arduino
     ```
 2.  **`LedService.java`:**
-    Certifique-se de que seu `LedService.java` está enviando os comandos `'1'` e `'2'` para ligar e desligar, conforme discutimos:
+    Certifique-se de que seu `LedService.java` está enviando os comandos `'1'` e `'2'` para ligar e desligar:
 
     ```java
     // ... dentro de LedService.java
@@ -132,9 +132,9 @@
     }
     ```
 3.  **Construir o Projeto:**
-    No IntelliJ IDEA, vá em:
-    `Build` -> `Rebuild Project`.
-    `File` -> `Invalidate Caches` / `Restart`...
+    * No IntelliJ IDEA, vá em:
+    * `Build` -> `Rebuild Project`.
+    * `File` -> `Invalidate Caches` / `Restart`...
 
 
 ### 4. Acessar a Interface Web
