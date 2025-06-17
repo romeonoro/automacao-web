@@ -77,13 +77,7 @@
 │   │   └── resources
 │   │       ├── application.properties (Configurações da aplicação, BD, porta serial)
 │   │       └── static
-│   │           └── index.html (Ou sua página web, se houver)
-│   └── test
-│       └── java
-│           └── com
-│               └── automacao
-│                   └── automacaoweb
-│                       └── AutomacaoWebApplicationTests.java
+│   │           └── index.html (Página web)
 ├── pom.xml (Gerenciamento de dependências Maven)
 ```
 ### 2. Configuração do Banco de Dados MySQL
