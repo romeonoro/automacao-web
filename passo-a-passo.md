@@ -55,6 +55,37 @@
     * Faça o upload do sketch para o Arduino.
     * **IMPORTANTE:** Após o upload, **FECHE O MONITOR SERIAL DO ARDUINO IDE**. A porta serial só pode ser usada por uma aplicação por vez.
 
+## Estrutura do Projeto
+```
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── automacao
+│   │   │           └── automacaoweb
+│   │   │               ├── AutomacaoWebApplication.java (Classe principal do Spring Boot)
+│   │   │               ├── controller
+│   │   │               │   └── LedController.java (API REST para controle do LED)
+│   │   │               ├── model
+│   │   │               │   └── LogEntry.java (Entidade JPA para logs)
+│   │   │               ├── repository
+│   │   │               │   └── LogEntryRepository.java (Interface para acesso a dados)
+│   │   │               ├── serial
+│   │   │               │   └── SerialCommunication.java (Classe para gerenciar a comunicação serial)
+│   │   │               └── service
+│   │   │                   └── LedService.java (Lógica de negócio para controle do LED e log)
+│   │   └── resources
+│   │       ├── application.properties (Configurações da aplicação, BD, porta serial)
+│   │       └── static
+│   │           └── index.html (Ou sua página web, se houver)
+│   └── test
+│       └── java
+│           └── com
+│               └── automacao
+│                   └── automacaoweb
+│                       └── AutomacaoWebApplicationTests.java
+├── pom.xml (Gerenciamento de dependências Maven)
+```
 ### 2. Configuração do Banco de Dados MySQL
 
 1.  Crie um banco de dados no MySQL (ex: `automacao`).
@@ -101,18 +132,10 @@
     }
     ```
 3.  **Construir o Projeto:**
-    Abra o terminal na raiz do projeto e execute:
-    ```bash
-    mvn clean install
-    ```
-    Ou no IntelliJ IDEA, vá em `Build` -> `Rebuild Project`.
+    No IntelliJ IDEA, vá em:
+    `Build` -> `Rebuild Project`.
+    `File` -> `Invalidate Caches` / `Restart`...
 
-4.  **Executar a Aplicação:**
-    No IntelliJ IDEA, clique no botão "Run" (seta verde) na classe `AutomacaoWebApplication`.
-    Alternativamente, via terminal:
-    ```bash
-    mvn spring-boot:run
-    ```
 
 ### 4. Acessar a Interface Web
 
