@@ -1,6 +1,6 @@
 ### Configuração do RXTX Library (Crucial para Comunicação Serial)
 
-1.  **Baixe a biblioteca RXTX:** Você precisa do `RXTXcomm.jar` e da biblioteca nativa correspondente (`rxtxSerial.dll` para Windows, `librxtxSerial.so` para Linux, `librxtxSerial.jnilib` para macOS).
+1.  **Baixe a biblioteca RXTX:** Você precisa do `RXTXcomm.jar` e da biblioteca nativa correspondente (`rxtxSerial.dll` para Windows).
 2.  **Verifique a compatibilidade de versão:** **Este é um ponto crítico.** Certifique-se de que a versão do JAR no seu `pom.xml` (`2.1.7` no seu caso) corresponde à versão da DLL nativa que você copiará.
     * **Problema Comum:** `WARNING: RXTX Version mismatch Jar version = RXTX-2.1-7 native lib Version = RXTX-2.2pre2`
     * **Solução:** Encontre e baixe a `rxtxSerial.dll` da **versão `2.1.7`** para Windows (ou a `.so`/`.jnilib` equivalente para seu OS).
