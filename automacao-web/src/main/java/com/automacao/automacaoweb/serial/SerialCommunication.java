@@ -4,7 +4,7 @@ import gnu.io.CommPortIdentifier;
 import gnu.io.NoSuchPortException;
 import gnu.io.PortInUseException;
 import gnu.io.SerialPort;
-import gnu.io.UnsupportedCommOperationException; // Importar esta exceção também
+import gnu.io.UnsupportedCommOperationException; 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
 import org.slf4j.Logger;
@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Enumeration; // Certifique-se de que esta importação está presente para getPortIdentifiers()
+import java.util.Enumeration; 
 
 @Component
 public class SerialCommunication {
