@@ -1,5 +1,3 @@
-// src/main/java/com/automacao/automacaoweb/model/LogEntry.java
-
 package com.automacao.automacaoweb.model;
 
 import jakarta.persistence.Entity;
@@ -17,13 +15,13 @@ public class LogEntry {
     private Long id;
 
     @Column(nullable = false) // Coluna não pode ser nula
-    private String action; // Ex: "Ligar LED", "Desligar LED"
+    private String action; // Ligar LED, Desligar LED
 
     @Column(nullable = false)
     private LocalDateTime timestamp; // Quando a ação ocorreu
 
     @Column
-    private String status; // Ex: "SUCESSO", "FALHA"
+    private String status; // SUCESSO, FALHA
 
     @Column(length = 500) // Limita o tamanho da string
     private String message; // Mensagem detalhada sobre o log
@@ -40,7 +38,7 @@ public class LogEntry {
         this.timestamp = LocalDateTime.now(); // Define o timestamp automaticamente
     }
 
-    // Getters e Setters (gerados automaticamente pela IDE ou escritos manualmente)
+    // Getters e Setters gerados automaticamente pela IDE 
     public Long getId() {
         return id;
     }
