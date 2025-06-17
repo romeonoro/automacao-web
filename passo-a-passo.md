@@ -127,8 +127,7 @@
     ```
 3.  **Construir o Projeto:**
     * No IntelliJ IDEA, vá em:
-    * `Build` -> `Rebuild Project`.
-    * `File` -> `Invalidate Caches` / `Restart`...
+    * `Build` -> `Rebuild Project` ou `File` -> `Invalidate Caches` / `Restart`...
 
 
 ### 4. Acessar a Interface Web
