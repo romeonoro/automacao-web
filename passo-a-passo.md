@@ -82,16 +82,16 @@
 ```
 ### 2. Configuração do Banco de Dados MySQL
 
-1.  Crie um banco de dados no MySQL (ex: `automacao`).
+1.  Crie um banco de dados no MySQL (ex: `automacao_db`).
     ```sql
-    CREATE DATABASE automacao;
+    CREATE DATABASE automacao_db;
     ```
 2.  Configure as credenciais do banco de dados no `src/main/resources/application.properties`:
 
     ```properties
-    spring.datasource.url=jdbc:mysql://localhost:3306/automacao?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true
-    spring.datasource.username=seu_usuario_mysql
-    spring.datasource.password=sua_senha_mysql
+    spring.datasource.url=jdbc:mysql://localhost:3306/automacao_db?useTimezone=true&serverTimezone=UTC&createDatabaseIfNotExist=true
+    spring.datasource.username=root
+    spring.datasource.password=laboratorio
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     spring.jpa.hibernate.ddl-auto=update # Ou create, create-drop para testar, mas 'update' é bom para desenvolvimento
     spring.jpa.show-sql=true
