@@ -9,8 +9,8 @@
 ### 1. Configuração do Arduino
 
 1.  **Fiação:**
-    * Conecte o pino longo (anodo) do LED ao pino digital **13** do Arduino (via um resistor de 220-330 Ohm).
-    * Conecte o pino curto (catodo) do LED ao GND (terra) do Arduino.
+    * Conecte o pino reto (anodo) do LED ao pino digital **13** do Arduino (via um resistor).
+    * Conecte o pino curvado (catodo) do LED ao GND (terra) do Arduino.
 
 2.  **Código do Arduino (Sketch):**
     Abra o Arduino IDE, copie e cole o seguinte código:
