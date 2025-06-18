@@ -1,1 +1,5 @@
-# led-arduino
+- P.O.O. 
+- MVC 
+- WEB 
+- LOG BANCO DE DADOS 
+- INTERFACE RESPONSIVA
